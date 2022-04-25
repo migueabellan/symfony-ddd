@@ -1,0 +1,12 @@
+includes:
+    # - vendor/knplabs/doctrine-behaviors/phpstan-extension.neon
+
+parameters:
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    excludes_analyse:
+        - %currentWorkingDirectory%/src/DataFixtures/*.php
+        - %currentWorkingDirectory%/src/Migrations/*.php
+        - %currentWorkingDirectory%/src/Kernel.php
+
+    ignoreErrors:
